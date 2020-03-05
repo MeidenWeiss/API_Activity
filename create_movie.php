@@ -1,6 +1,6 @@
 <?php
 // Get genre list
-$json2 = file_get_contents('http://localhost/api_packages/movie_api/category/read.php');
+$json2 = file_get_contents('https://api-packages.herokuapp.com/movie_api/category/read.php');
 $data2 = json_decode($json2,true);
 $cat = $data2['records'];
 ?>

@@ -19,7 +19,7 @@ switch($action){
             $curl = curl_init();
 
             curl_setopt_array($curl, array(
-                CURLOPT_URL => "http://localhost/api_packages/movie_api/movies/create.php",
+                CURLOPT_URL => "https://api-packages.herokuapp.com/movie_api/movies/create.php",
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_ENCODING => "",
                 CURLOPT_MAXREDIRS => 10,
@@ -54,7 +54,7 @@ switch($action){
             $curl = curl_init();
 
             curl_setopt_array($curl, array(
-                CURLOPT_URL => "http://localhost/api_packages/movie_api/movies/update.php",
+                CURLOPT_URL => "https://api-packages.herokuapp.com/movie_api/movies/update.php",
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_ENCODING => "",
                 CURLOPT_MAXREDIRS => 10,
@@ -83,7 +83,7 @@ switch($action){
         $curl = curl_init();
 
         curl_setopt_array($curl, array(
-            CURLOPT_URL => "http://localhost/api_packages/movie_api/movies/delete.php",
+            CURLOPT_URL => "https://api-packages.herokuapp.com/movie_api/movies/delete.php",
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => "",
             CURLOPT_MAXREDIRS => 10,

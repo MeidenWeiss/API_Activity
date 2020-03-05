@@ -1,12 +1,12 @@
 <?php
 if(isset($_POST['submit'])){
     $search = $_POST['search'];
-    $json = file_get_contents('http://localhost/api_packages/movie_api/movies/search.php?name='.$search);
+    $json = file_get_contents('https://api-packages.herokuapp.com/movie_api/movies/search.php?name='.$search);
     $data = json_decode($json,true);
     
     $list = $data['records'];
 }else{
-    $json = file_get_contents('http://localhost/api_packages/movie_api/movies/read.php');
+    $json = file_get_contents('https://api-packages.herokuapp.com/movie_api/movies/read.php');
     $data = json_decode($json,true);
     
     $list = $data['records'];

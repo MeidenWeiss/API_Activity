@@ -1,6 +1,6 @@
 <?php
 $id = $_GET['id'];
-$json = file_get_contents('http://localhost/api_packages/movie_api/movies/read_one.php?id='.$id);
+$json = file_get_contents('https://api-packages.herokuapp.com/movie_api/movies/read_one.php?id='.$id);
 $data = json_decode($json,true);
 $details = array('records' => $data);
 $result = $details['records'];
